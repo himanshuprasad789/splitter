@@ -1,7 +1,7 @@
 {
-  "name": "c",
+  "name": "splitter",
   "version": "1.0.0",
-  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "description": "a simple tip calculator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

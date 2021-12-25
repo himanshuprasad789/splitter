@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* # Front-end Style Guide
+/* # Front-end Style G
+
 
 ## Layout
 
@@ -34,198 +35,438 @@ The designs were created to the following widths:
 - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
 - Weights: 400, 500, 700 */
 
-*{
+* {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-html{
+html {
   font-size: 62.25%;
 }
-body{
+body {
   font-family: 'Space Mono', monospace;
   background-color: hsl(185, 41%, 84%);
-  color:hsl(183, 100%, 15%);
+  color: hsl(183, 100%, 15%);
+  padding: 10rem 0;
 }
-.splitter{
+.splitter {
   text-transform: uppercase;
-  font-size:3rem;
+  height: 30vh;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15rem 0 10rem 0;
-  letter-spacing:1.6rem;
+  /* margin: 15rem 0 10rem 0; */
+  letter-spacing: 1.6rem;
   font-weight: bold;
-  color:hsl(186, 14%, 43%);
+  color: hsl(186, 14%, 43%);
 }
 
-.container{
+.container {
   display: flex;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  
 }
-.calculator{
+.calculator {
   width: 100rem;
-  height:50rem;
-  border-radius:2rem;
+  height: 50rem;
+  border-radius: 2rem;
   background-color: white;
   display: flex;
-  padding-top:3.5rem;
+  padding-top: 3.5rem;
   justify-content: space-evenly;
 }
-.calc{
-  width:44rem;
-  height:43rem;
-  background-color: rgb(17, 87, 87);
+.calc {
+  width: 44rem;
+  height: 43rem;
+  /* background-color: rgb(17, 87, 87); */
+  background-color: #00494d;
 }
 
 /* LEFT BOX  */
 
-.calculator-left{
+.calculator-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color:white;
+  background-color: white;
 }
 
-.box{
+.box {
   width: 100%;
-  height:8rem;
-  background-color:white;
-  border:2px solid balck;
+  height: 8rem;
+  background-color: white;
+  border: 2px solid balck;
   position: relative;
 }
-.box2{
-  height:16rem;
+.box2 {
+  height: 16rem;
   /* padding-top: 1.6rem; */
 }
-.buttons{
-  display:grid;
+.buttons {
+  display: grid;
   grid-template-rows: 5.5rem 5.5rem;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-  grid-gap:1rem;
-  gap:1rem;
+  grid-gap: 1rem;
+  gap: 1rem;
   margin-top: 1rem;
   /* background-color:white; */
 }
-.btn{
+.btn {
   /* border:1px solid black; */
-  background:hsl(183, 100%, 15%);
-  border-radius:5px;
-  color:white;
+  background: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  color: white;
   display: grid;
   place-items: center;
   font-size: 2.5rem;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-#custom{
-  background:rgb(247, 247, 247);
-  color:hsl(186, 14%, 43%);
+#custom {
+  background: rgb(247, 247, 247);
+  color: hsl(186, 14%, 43%);
   font-size: 2.5rem;
-  text-align:center;
+  text-align: center;
 }
-.bgchange{
-  background-color:black;
+.bgchange {
+  background-color: black;
 }
-.mt1{
+.mt1 {
   margin-top: 0.5rem;
 }
-label{
+label {
   font-size: 2rem;
-  color:hsl(186, 14%, 43%);
-  font-weight:bold;
-
+  color: hsl(186, 14%, 43%);
+  font-weight: bold;
 }
-input{
-  display:block;
+input {
+  display: block;
   height: 5rem;
   border-radius: 1rem;
   width: 100%;
-  font-size:2.4rem;
-  padding:0 1.4rem;
-  text-align:right;
+  font-size: 2.4rem;
+  padding: 0 1.4rem;
+  text-align: right;
   border: none;
   outline: none;
   font-weight: bold;
-  font-family: 'Space Mono',sans-serif;
-  background-color:rgb(247, 247, 247);
-  color:hsl(183, 100%, 15%);
+  font-family: 'Space Mono', sans-serif;
+  background-color: rgb(247, 247, 247);
+  color: hsl(183, 100%, 15%);
 }
-.icon{
+.icon {
   position: absolute;
   display: inline-block;
   font: 'Space Mono' bold;
-  font-size:3rem;
-  top:3.8rem;
-  left:2rem;
-  color:hsl(184, 14%, 56%);
+  font-size: 3rem;
+  top: 3.8rem;
+  left: 2rem;
+  color: hsl(184, 14%, 56%);
 }
-
 
 /* RIGHT BOX */
-.calculator-right{
-  border-radius:1.5rem;
-  color:white;
-  
+.calculator-right {
+  border-radius: 1.5rem;
+  color: white;
 }
-.right{
-  height:15rem;
-  /* background-color:black; */
-  display:flex;
+.right {
+  height: 15rem;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 6rem;
 }
-.right-box{
-  /* background-color:#888888; */
-  height:6rem;
-  display:flex;
+.right-box {
+  height: 6rem;
+  display: flex;
   justify-content: space-between;
-  width:90%;
+  width: 90%;
 }
-.text-top{
+.text-top {
   font-size: 2rem;
 }
-.text-down{
-  font-size:1.6rem;
-  color:hsl(184, 14%, 56%);
+.text-down {
+  font-size: 1.6rem;
+  color: hsl(184, 14%, 56%);
 }
-span{
-  height:90%;
+.splitter span {
+  height: 10vh;
 }
-.amount{
-  font-weight: bold ;
-  font-size:4rem;
-  color:hsl(172, 67%, 45%);
+.amount {
+  font-weight: bold;
+  font-size: 4rem;
+  color: hsl(172, 67%, 45%);
 }
 
-.reset-button{
-  display:grid;
+.reset-button {
+  display: grid;
   width: 90%;
-  height:5rem;
-  background-color: hsl(172, 67%, 45%) ;
+  height: 5rem;
+  background-color: hsl(172, 67%, 45%);
   display: grid;
   place-items: center;
-  font-size:2.4rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-left: 2rem;
   margin-top: 12.5rem;
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
   color: rgb(17, 87, 87);
   cursor: pointer;
-  border:none;
+  border: none;
   outline: none;
 }
 .reset-button:disabled,
 .reset-button[disabled] {
-  pointer-events: none; 
-  background:hsl(184, 14%, 56%);
+  pointer-events: none;
+  background: hsl(184, 14%, 56%);
+}
+@media (max-width: 400px) {
+  html {
+    /* background: red; */
+    font-size: 37.5%;
+  }
+  body{
+    /* padding: 10rem 0 0 0; */
+    padding:0;
+  }
+
+    .splitter {
+    margin: 0;
+    height: 20vh;
+    font-size:3.5rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .calculator {
+    width: 100vw;
+    height: 110em;
+    border-radius: 3rem 3rem 0 0;
+    flex-direction: column;
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+  .calc {
+    margin: 0 auto;
+    width:85%;
+  }
+
+  /* LEFT BOX  */
+
+  .calculator-left {
+    height: 54rem;
+  }
+
+  .box {
+    height: 10rem;
+    
+  }
+  .box2 {
+    height: 26rem;
+  }
+  .buttons {
+    display: grid;
+    grid-template-rows: 6.3rem 6.3rem 6.3rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 1.5rem 1.5rem;
+    /* gap: 1rem; */
+    margin-top: 1rem;
+  }
+  .btn {
+    /* border:1px solid black; */
+    background: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #custom {
+    font-size: 3.2rem;
+  }
+  
+  .mt1 {
+    margin-top: 1rem;
+  }
+  label {
+    font-size: 2.2em;
+  }
+  input {
+    font-size: 3.5rem;
+    height: 6rem;
+    caret-color: hsl(184, 14%, 56%);
+  }
+  .icon {
+    font-size: 3.5rem;
+    top: 5rem;
+  }
+
+  /* RIGHT BOX */
+  .calculator-right{
+    height:34rem;
+  }
+  .right {
+    height: 15rem;
+   
+    margin-top: 4rem;
+  }
+  .right-box {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .text-top {
+    font-size: 2.2rem;
+  }
+  .text-down {
+    font-size: 1.8rem;
+  }
+
+  .amount {
+    font-size: 4rem;
+  }
+
+  .reset-button {
+    margin-top: 5rem;
+    height: 6rem;
+    font-size: 3.5rem;
+  }
+  .splitter span {
+  height: 5rem;
+ }
+}
+@media (min-width: 401px) and (max-width: 800px) {
+  html {
+    background: green;
+    font-size: 43.75%;
+  }
+  .splitter {
+    margin: 0;
+    height: 20vh;
+  }
+  .container {
+    width: 100%;
+  }
+  .calculator {
+    width: 50em;
+    height: 100em;
+    margin: 0 auto;
+    border-radius: 2rem;
+    flex-direction: column;
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+  .calc {
+    margin: 0 auto;
+  }
+
+  /* LEFT BOX  */
+
+  .calculator-left {
+    height: 47rem;
+  }
+
+  .box {
+    height: 10rem;
+    
+  }
+  .box2 {
+    height: 16rem;
+  }
+  .buttons {
+    display: grid;
+    grid-template-rows: 5.8rem 5.8rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    background: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #custom {
+    background: rgb(247, 247, 247);
+    color: hsl(186, 14%, 43%);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .mt1 {
+    margin-top: 1rem;
+  }
+  label {
+    font-size: 2.5em;
+  }
+  input {
+    font-size: 3.5rem;
+    height: 6rem;
+    caret-color: hsl(184, 14%, 56%);
+  }
+  .icon {
+    font-size: 3.5rem;
+    top: 5rem;
+  }
+
+  /* RIGHT BOX */
+  .calculator-right{
+    height: 38rem;
+  }
+  .right {
+    height: 15rem;
+   
+    margin-top: 4rem;
+  }
+  .right-box {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .text-top {
+    font-size: 2.5rem;
+  }
+  .text-down {
+    font-size: 1.8rem;
+  }
+
+  .amount {
+    font-size: 4.5rem;
+  }
+
+  .reset-button {
+    margin-top: 8rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 801px) and (max-width: 1020px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size:120%;
+  }
 }
