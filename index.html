@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="splitter"><span>Spli</span><span>tter</span></div>
+<div class="container">
+  <div class="calculator">
+    <div class="calc calculator-left">
+      <div class="box">
+        <label>Bill</label>
+        <span class="icon">$</span>
+        <input class="mt1" id="bill" type="number" placeholder="0">
+      </div>
+      <div class="box box2">
+        <label> Select Tip %</label>
+        <div class="buttons">
+          <div class="btn" onclick="selectedPercentage(this)">5%</div>
+          <div class="btn" onclick="selectedPercentage(this)">10%</div>
+          <div class="btn" onclick="selectedPercentage(this)">15%</div>
+          <div class="btn" onclick="selectedPercentage(this)">25%</div>
+          <div class="btn" onclick="selectedPercentage(this)">50%</div>
+          <input type="Number" placeholder="Custom" id="custom">
+          <!-- <div class="btn" onclick="selectedPercentage(this)">Custom</div> -->
+
+        </div>
+      </div>
+      <div class="box">
+        <label>Number of People</label>
+        <span class="icon">#</span>
+        <input class="mt1" id="noOfPeople" type="number" placeholder="0">
+      </div>
+    </div>
+    <div class="calc calculator-right">
+      <div class="right">
+        <div class="right-box">
+          <div class="texts">
+            <div class="text-top">Tip Amount</div>
+            <div class="text-down">/ person</div>
+          </div>
+          <div class="amount">$<span class="amtp">0.00</span></div>
+        </div>
+        <div class="right-box">
+          <div class="texts">
+            <div class="text-top">Total</div>
+            <div class="text-down">/ person</div>
+          </div>
+          <div class="amount">$<span class='amt'>0.00</span></div>
+        </div>
+      </div>
+      
+      <button class="reset-button">RESET</button>
+    </div>
+  </div>
+</div>
+<!-- 
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">HIMANSHU</a>. 
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
