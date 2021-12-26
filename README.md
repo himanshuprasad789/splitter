@@ -12,9 +12,9 @@ It was a frontend mentor challenge.
 ![desktop view](/images/ui-laptop.png)
 
 
-### Tablet View
+### Mobile View
 ![tablet view](/images/ui-tablet.png)
 
 
-### Mobile View
+### Tablet View
 ![desktop view](/images/ui-mobile.png)
