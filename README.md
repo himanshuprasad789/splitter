@@ -1,4 +1,6 @@
 # Splitter
+[link](https://splitter-tip-calculatorr.netlify.app/)
+
 ## Tip calculator
 
 an excellent tip calculator helps in dividing total tip among employees.
